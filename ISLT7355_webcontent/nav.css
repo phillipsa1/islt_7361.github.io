@@ -1,0 +1,50 @@
+/******Navigation position and dropdown*********/
+
+#nav_menu ul {
+  list-style: none;
+  position: relative;
+}
+
+#nav_menu ul li {
+  float: left;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover > ul {
+  display: block;
+}
+
+#nav_menu > ::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/************Navigation Style**************/
+#nav_menu {
+  background-color: white;
+  padding: 20px;
+}
+#nav_menu ul li {
+  display: block;
+  border: 3px solid gray;
+  width: 130px;
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#nav_menu ul li {
+  bacground-color: white;
+  border: 3px outset;
+}
