@@ -16,31 +16,6 @@
   margin: 0;
   padding: 0;
 }
-/**************************SOCIAL MEDIA LINKS for HOMEPAGE**************************/
-
-.social-links {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 25px;
-  background: #666666;
-}
-
-.social-links ul {
-  list-style: none;
-  display: flex;
-}
-
-.social-links li {
-  margin: 0px 5px;
-}
-
-.social-links a {
-  color: white;
-}
-
-.social-links a:hover {
-  color: black;
-}
 
 /**************************NAVIGATION**************************/
 
@@ -69,6 +44,5 @@
   padding: 10px;
 }
 
-.logo {
-}
+
 /******************footer************************/
