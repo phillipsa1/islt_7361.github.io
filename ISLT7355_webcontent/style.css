@@ -50,13 +50,13 @@ p, h1, h2, h3, h4, blockquote {
   background-color: #808080;
   color: white;
   padding: 10px;
-margin-left: 250px;
+  margin-left: 260px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 20px;
-  border: 3px outset gray;
-  font-weight: bold;
+  border: 5px outset gray;
+  font-weight: 400px;
 }
 
 
