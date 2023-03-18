@@ -17,30 +17,36 @@ Developed: February 21, 2023
 Tested: February 21, 2023. Passed Chrome, Firefox, and Edge.
 
 -->
-    <meta charset="utf-8">
-    <title>Projects</title>
-    <link href="nav.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="nav.css">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<script src="script.js" defer></script>
   </head>
   <body>
     <!--******************Navigation************************-->
-    <nav>
-        <div class="logo">
-          <img src="ApTlogoCropped.png" alt="logo" class="logo">
-        </div>
-              <ul class="menu">
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="projects.html">Projects<ion-icon name="caret-down-outline"></ion-icon></a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                        <li><a href="#">Link #3</a></li>
-                    </ul>
-                 </li>
-             </ul>
-      </nav>
+ <nav>
+      <ul class="menu">
+        <li class="logo"><a href="index.html"><img src="ApTlogoCropped.png" width="200" alt="Ashley Phillips logo" ></a></li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="about.html">About</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0" href="projects.html">Projects</a>
+              <ul class="submenu">
+                  <li class="subitem"><a href="#">Link #1</a></li>
+                  <li class="subitem"><a href="#">Link #2</a></li>
+                  <li class="subitem"><a href="#">Link #3</a></li>
+              </ul>
+          </li>
+        
+          <li class="item"><a href="reflection.html">Reflection</a></li>
+          <li class="item"><a href="#contact.html">Contact</a>
+          </li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+  </nav>
     <!--******************MAIN***********************-->
 <header></header>
     <!--******************FOOTER************************-->
