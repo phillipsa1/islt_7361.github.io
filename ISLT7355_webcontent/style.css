@@ -1,0 +1,419 @@
+/* ColorsWebsite Colors: 
+#000000 -Black
+#FFFFFF-White
+#808080 Gray
+#666666 - Darker gray 
+#D0D0D0 – light gray 
+#66b2b2 - Brighter teal 
+#008080 -teal
+#006666 -Darker teal
+#004c4c -Darkest shade of teal
+ 
+#F1F1F1 - Beige 
+#F2F2F2 - Darker beige
+Font-family will be: Garmond, Raleway, Sans-serif.
+OR font-family:'Ibarra Real Nova', serif;
+
+
+Tested: March 23, 2023 Passed Chrome & FireFox
+
+/****************************************GLOBAL********************************************/
+
+@font-face {
+  font-family: kaushan;
+  src: url("KaushanScript-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #666666;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: kaushan, serif;
+}
+
+/******************Top-bar************************/
+
+.top-bar {
+  width: 100%;
+  height: auto;
+  background-image: url('background_texture1.png');
+  background-repeat: repeat;
+  color: white;
+  text-align: center;
+  padding: 2rem 3rem;
+  top: 0;
+}
+
+/**************************************HOME PAGE***************************/
+#home-header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home_main {
+  margin: 2% auto 20%;
+  padding: 0 10%;
+}
+
+.home_main p {
+  line-height: 2rem;
+}
+
+.greetings {
+  margin: 2%;
+}
+
+/**************************************ABOUT PAGE****************************/
+
+.about_header {
+  text-align: center;
+  color: #004c4c;
+  margin: 3% auto;
+}
+
+.about-main {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.about_img {
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  margin: 2rem auto;
+}
+
+.about_para {
+  margin: 1rem auto;
+}
+
+.about_video video {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.resume_button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  border: 2px outset black;
+  font-weight:bold;
+  margin-bottom: 1rem;
+}
+
+.edu_details {
+  margin: 2rem auto;
+  line-height: 1.25rem;
+}
+
+.edu_details h2 {
+  margin: 1rem auto;
+}
+
+/**************************************MAIN Projects/Competencies page****************************/
+
+.project-header {
+  text-align: center;
+  color: #004c4c;
+  margin: 3% auto 8%;
+}
+
+.project-main {
+  width: 80%;
+  margin: 1rem auto 20%;
+  text-align: left;
+}
+
+.goal {
+  margin: 3% auto;
+}
+
+.goal h2 {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+.line {
+  border-top: 1px solid black;
+  margin-right: 25%;
+}
+
+.goal p {
+  margin-right: 20%;
+  line-height: 2rem;
+}
+
+.goalButton {
+  margin: 1rem 0;
+  border-radius: 8px;
+  color: white;
+  background-color: #006666;
+  font-size: 1rem;
+  padding: 5px 25px;
+  min-width: 100px;
+}
+
+
+/**************************************Competency #1****************************/
+
+
+/**************************************Competency #2****************************/
+
+
+/**************************************Competency #3****************************/
+
+/**************************************Reflection Page****************************/
+.reflection_main {
+  margin: 3% auto 20%;
+  padding: 0 10%;
+  line-height: 2rem;
+}
+
+#header1 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.para1::first-letter  {
+  font-size: 175%;
+  color: #004c4c;
+}
+
+.indent {
+  text-indent: 2.5%;
+}
+
+/**************************************CONTACT****************************/
+
+/**************************************FOOTER****************************/
+/*footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}   This was coded out 3/23/23 for wk 6 Footer Media -Icons & Images assignment It was replaced with the code directly below. 
+*/
+
+footer {
+  width: 100%;
+  height: auto;
+  background-image: url('img/blackbackground.png');
+  background-repeat: repeat;
+  color: white;
+  text-align: center;
+  padding: 2rem 3rem;
+  top: 0;
+
+}
+
+
+/*footer p {
+  padding: 10%;
+} Coded out 3/23/23 and remains irrelevant, can delete whenever you're sure you will not be resuming previously used footer*/
+
+.footer-icon {
+  width: 30px;
+  height: auto;
+  padding-right: 5px;
+  vertical-align: middle; 
+  margin-right: 10px;
+}  
+
+.footer-icon:hover {
+  width: 50px;
+  transition:width 0.3s linear 0s; 
+}
+
+
+
+/**************************************Media Queries****************************/
+
+/*************************************** Tablets *******************************/
+@media only screen and (min-width: 450px) {
+
+  .about_img {
+    width: 75%;
+    height: auto;
+  }
+
+ /* footer p {
+    padding: 5%;
+  }*/
+
+  .goal h2 {
+    font-size: 2rem;
+  }
+
+  .goal p {
+    margin-right: 20%;
+  }
+
+  .goalButton {
+    min-width: 120px;
+    padding: 10px 25px;
+  }
+
+  .edu_details {
+    text-align: left;
+    list-style-position: inside;
+    margin: 2rem auto;
+    line-height: 2rem;
+  }
+
+  .edu_details h2 {
+    margin: 2rem auto;
+  }
+
+  /* *** */
+  .top-bar p, h3 {
+    display: none;
+  }
+
+  #header1 h1 {
+    font-size: 175%;
+  }
+
+  h4 {
+    font-size: 110%;
+  }
+  
+}
+
+/************************************** Desktop ********************************/
+@media only screen and (min-width: 800px ) {
+
+  .about_img {
+    float: right;
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  .about_para h2 {
+    padding-top: 10%;
+  }
+
+  .about_para p, .about_para blockquote {
+    text-align: left;
+  }
+
+  .about_para p {
+    line-height: 2rem;
+    padding-bottom: 5%;
+  }
+
+  .about_para .quote-name {
+    text-align: center;
+  }
+
+  .about_video video {
+    width: 50%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .about_video {
+    clear: both;
+  }
+
+ /* footer p {
+    padding: 2%;
+  }*/
+
+  .goal h2 {
+    font-size: 2.5rem;
+  }
+
+  .goal p {
+    margin-right: 50%;
+  }
+
+  .goalButton {
+    min-width: 150px;
+    padding: 10px 25px;
+  }
+
+  .edu_details {
+    clear: both;
+    list-style-position: inside;
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
+
+  .edu_details h2 {
+    margin: 2rem auto;
+  }
+
+  /* *** */
+  #header1 h1 {
+    font-size: 200%;
+  }
+
+  h4 {
+    font-size: 130%;
+  }
+
+  #home-header {
+    font-size: 160%;
+    }
+
+  .greetings {
+    font-size: 175%;
+  }
+  
+  .top-bar p, h3 {
+    display: block;
+  }
+
+}
+
+/********************************** Print Media Query **************************/
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .about_header {
+    font-family: kaushan, serif;
+  }
+
+  .about_para h2,
+  .edu_details h2 {
+    font-family: serif;
+  }
+
+  .top-bar,
+  .menu,
+  .about_img,
+  .about_video,
+  .about_button {
+    display: none;
+  }
+
+  .about_header,
+  .about_main {
+    margin: 1cm 2.54cm;
+    text-align: center;
+  }
+
+}
